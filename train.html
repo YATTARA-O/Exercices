@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> 
+        console.log(document.body. firstElementChild. innerHTML= 'KANKOU');
+    </script>
+    <script>
+        var header = document.getElementById("par");
+        header.style.background = "purple";
+        header.style.textAlign = "center";
+        header.style.color = "white";
+    </script>
+    
+    <script>
+        const mesP = document.getElementsByTagName("p");
+         console.log(mesP);
+    </script>
+    <script>
+        var elements = document.getElementsByClassName("test");
+        for (element of elements) {
+        console.log(element);
+        }
+    </script>
+    
+    <script>
+        function creerParagraphe(play) {
+            document.write('<p>' + play + '</p>');
+        }
+
+        creerParagraphe("Voici mon premier paragraphe");
+        creerParagraphe("Voici mon deuxième paragraphe");
+        creerParagraphe("Elle est précédée d'un mot clé (const, var, let) qui prermet de le déclarer. Elle a un nom, Elle peut stocker différents types de données elle se termine par un point virgule.");
+    </script>
+
+
+
+</body>
+</html>

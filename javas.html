@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="javas.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="critical.css" as="style">
+    <link rel="preload" href="critical.js" as="script">
+    <link rel="preconnect" href="https://example.com">
+    <link rel="dns-prefetch" href="https://example.com">.
+    <title>JavaScript DOM</title>
+</head>
+    <body>
+        <header class="header">
+            <video id="background-video" autoplay loop muted>
+                <source src="video/Cascade.mp4" type="video/mp4">
+            </video>
+           
+            
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content">
+                <h1>CHAP-I AFFICHAGE ET VARIABLES</h1>
+                <h2>1-Relier un fichier Javascript au document HTML</h2>
+            </div>
+
+            <img src="images/tulip.jpg" srcset="images/ciel.jpg 480w, images/ciel.jpg 1080w" sizes="50vw">
+        </header>
+
+        <p id = "monParagraphe">Comment Procéder?.</p>
+        <button onclick= "changeTexte()">Changer le texte</button>
+
+        <div id="app"></div>
+
+        <h1>CHAP-I-2 LES VARIABLES</h1>
+        <h2>Différentes Caractéristiques d'une variable</h2>
+        <p>  Elle est précédée d'un mot clé (const, var, let) qui prermet de le déclarer. Elle a un nom, Elle peut stocker différents types de données elle se termine par un point virgule.
+        </p>
+        <h3>Règles d'écriture pour les noms de variables</h3>
+        <ul>
+            <li>Une varible doit commencer par une lettre ou un underscore</li>
+            <li>Elle ne  doit pas commencer par un chiffre, mais peut en contenir</li>
+            <li>Elle peut contenir des lettres, des chiffres et des undescrore</li>
+            <li>Elle ne doit pas contenir de caractère spéciaux</li>
+            <li>Le nom d'une variable est sensible à la casse</li>
+        </ul>
+        <h3>1-4 LES TYPES DE DONNEES</h3>
+        <P>Pour connaître le type d'une variable on utilise l'opérateur typeof</P>
+
+        <h3>Les types de Variables</h3>
+        <h5>Le type string</h5>
+        <p>String ou Chaîne de caractère va stocker du texte, elle s'écrit entre les singles quote ou double quote</p>
+
+        <h3>Les types d'Array</h3>
+        <h5>Le type string</h5>
+        <p>String ou Chaîne de caractère va stocker du texte, elle s'écrit entre les singles quote ou double quote</p>
+        <h3>Concatenation, Litteraux de gabarits, et Interpolation</h3>
+        <p>Concaténer est un terme de programmation du genre chic qui signifie « attacher ensemble ». Pour attacher des chaînes en JavaScript, on utilise l'opérateur plus (+) , le même que l'on utilise pour ajouter deux nombres, mais dans ce contexte il fait quelque chose de différent.</p>
+        <h3>Les boucles</h3>
+        <p> Servent à reproduire ou repéter du While loops
+            A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations is not known before the first iteration begins.
+            JavaScript has two kinds of while loops:<br>
+            while evaluates its condition at the start of each pass through the loop. <br>
+            do-while evaluates its condition at the end of each pass through the loop.<br>
+
+            <h4>The while loop</h4>
+            A while loop starts by evaluating a single condition. If the condition is true, a set of statements is repeated until the condition becomes false.<br>
+
+            <h4>The do-while Loop</h4> 
+            The other variation of the while loop, known as the do-while loop, performs a single pass through the loop block first, before considering the loops condition. It then continues to repeat the loop until the condition is false.<br>
+
+            <h4>For loops</h4> 
+            For loops are used to run a set of tasks for a certain number of times. The for loop repeats a block of code as long as a certain condition is met. It is typically used to execute a block of code for a certain number of times.<br>
+            for(initialization; condition; increment) {
+                // Code to be executed
+            }
+
+            <ul>
+                <li><strong>Initialisation :</strong> is used to initialize the counter variables and evaluated once unconditionally before the first execution of the body of the loop.</li>
+                <li><strong>Condition :</strong> : is evaluated at the beginning of each iteration. If it evaluates to true, the loop statements execute. If it evaluates to false, the execution of the loop ends.</li>
+                <li><strong>Increment :</strong> : updates the loop counter with a new value each time the loop runs.</li>
+            </ul>
+            <h4>For-in loops</h4>
+            <p>
+                For-in loops are a special type of loop that iterates over the properties of an object, or the elements of an array.</p>
+            <h4>For-in loops</h4>
+            <p>
+                For-in loops are a special type of loop that iterates over the properties of an object, or the elements of an array.
+            </p>
+            <h4>Boucle Infinie</h4>
+            <p>
+                Une boucle infinie est une boucle dont la condition de sortie n'est pas atteignable.    
+            </p>
+            <h4>Fonction </h4>
+            <p>Une fonction est un bout de isolé auquel on fait appel pour automatiser une action.</p>
+            <h5>Une fonction prédefinie</h5>
+            <p>Est une fonction déjà existante elle utilisée en faisant appel en le nommant dans notre code.</p>
+
+            <h5>Une fonction utilisateur</h5>
+            <p> a function lets you define a block of code that performs a task. You give a function a name that identifies what it does, and this name is used to "call" the function to perform its task when needed.</p>
+
+            <h5>Creating function</h5>
+            <p> 
+                Every function has a function name, which describes the task that the function performs. To use a function, you “call” that function with its name and pass it input values known as arguments that match the types of the functions parameters.
+
+                The code above is known as a function declaration. You define a function using the function keyword. After that comes the name of the function, followed by parentheses (). After the parentheses comes an opening brace, followed by the code you want to run in the function, followed by a closing brace. With your function defined, you can use it like so:
+
+                printMessage();
+            </p>
+            <h5>Function Parameters</h5>
+            <p> 
+                When you define a function, you can optionally define one or more named, typed values that the function takes as input, known as parameters. To make a function accept a parameter, you will need to add to function parentheses a parameter name. Below is a code example of a function that accepts two parameters.
+
+                function outputName(name, lastName) {
+                    console.log(`${name} ${lastName}`);
+                }
+
+                You can define as many parameters as you like. However, for each parameter, you specify, a corresponding argument needs to be passed to the function when it is called otherwise, its value becomes undefined.
+
+                Default values
+                Parameters can have a default value. A default parameter value is used when a value was not provided during the function call. You assign a default value to a parameter when you first define it in the function name. Down below is an example of a function that accepts two parameters and if parameter values were not provided, uses default values.
+            </p>
+            <h5>Les Evènements</h5>
+            <p> pour interagir avec l'utilisateur, il faut mettre en place un écouteur d'évènement (adEventListener) sur l'objet à manipuler ou à   suivre. "Window" représente une fenêtre contenant un document DOM. window.addEventListener('load', maFonction); //Je mets en place un écouteur d'événemnt.Celui-ci comprend 2 paramètres : 1. le type d'évènement à capturer; 2. le code à éxécuter lorsque l'évènement a lieu. ici, nous mentionnons une fonction que l'on définira ci-dessous.
+
+                function maFonction() {
+                    setTimeout(function() { //SetTimeOut permet de mettre en place un timer.
+                        console.log('ma page est chargée !'); //lorsque le temps sera écoulé, le texte s'affichera dans la console.
+                    }, 1000) ;  //Le timer est défini en milisecondes (ici 10000ms = 10sec.)
+                    
+                }
+            </p>
+            <br>
+
+        <footer class="footer">
+            <a href="https://wildlearner-users-prod.s3.amazonaws.com/113680331296507089095/certificate_1681145237813.jpg">My infos</a>
+
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <a href="#" class="fa fa-twitter"></a>
+            <i class="fa fa-google" aria-hidden="true"></i>
+        </footer>
+
+        <script src="javas1.js"></script>
+        <script src="javas.js"></script>
+    </body>
+</html>
